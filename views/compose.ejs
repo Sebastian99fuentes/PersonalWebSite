@@ -1,0 +1,19 @@
+<!-- una manera mas sencilla de agregar nuestro header y footer a nuestras vistas -->
+<%- include('partials/header'); -%>
+<h1>Compose</h1>
+
+
+<form class="" action="/compose" method="post">
+   
+    <div class="form-group">
+        <label  class="form-label">TITLE</label>
+        <input  class="form-control"  type="text" name="titlecont"></input>
+        <label  class="form-label">SOMETHING</label>
+        <textarea  class="form-control" name="postContent" cols="30" rows="5"></textarea>
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+<%- include('partials/footer'); -%>
